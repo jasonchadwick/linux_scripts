@@ -6,5 +6,4 @@ find /home/jchad/Downloads/* -mtime +7 -exec rm -rf {} \;
 trash-empty 7
 apt autoremove --purge --yes --allow-unauthenticated;
 apt clean --yes --allow-unauthenticated;
-#journalctl --vacuum-time=7d;
-#find /home/jchad/GoogleDrive/.Trash/* -atime +7 -exec rm -rf {} \;
+journalctl --vacuum-time=7d;
