@@ -4,7 +4,7 @@ import os
 import sys
 import pandas as pd
 
-df = pd.read_csv('/home/jchad/Scripts/backgrounds.csv', index_col=0)
+df = pd.read_csv('/home/jchad/scripts/wallpaper/backgrounds.csv', index_col=0)
 
 for i in range(len(df)):
     url = df['url'].iloc[i]

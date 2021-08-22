@@ -6,7 +6,7 @@ while [ $wgetreturn -ne 0 ]
 do
     source /home/jchad/miniconda3/etc/profile.d/conda.sh
     conda activate py38
-    output=$(python /home/jchad/Scripts/random_wallpaper.py)
+    output=$(python /home/jchad/scripts/wallpeper/random_wallpaper.py)
     IFS=' ' read -ra output_array <<< "$output"
     idx=${output_array[0]}
     url=${output_array[1]}

@@ -5,7 +5,7 @@ import sys
 import pandas as pd
 import random
 
-df = pd.read_csv('/home/jchad/Scripts/backgrounds.csv', index_col=0)
+df = pd.read_csv('/home/jchad/scripts/backgrounds.csv', index_col=0)
 idx = random.randint(0,len(df)-1)
 
 print(str(idx) + ' ' + df['url'].iloc[idx])

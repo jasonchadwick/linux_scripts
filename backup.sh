@@ -12,3 +12,5 @@ conda env export -n krotov --from-history >> /home/jchad/backup/conda.txt
 
 dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ > /home/jchad/backup/keyboard-shortcuts.txt
 # restore: dconf load /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ < /home/jchad/backup/keyboard-shortcuts.txt
+
+cp /home/jchad/.bashrc /home/jchad/backup/bashrc.txt
