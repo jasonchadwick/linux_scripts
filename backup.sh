@@ -9,8 +9,11 @@ crontab -l > /home/jchad/backup/crontab.txt
 
 conda env export -n base --from-history > /home/jchad/backup/conda.txt
 conda env export -n krotov --from-history >> /home/jchad/backup/conda.txt
+conda env export -n robin --from-history >> /home/jchad/backup/conda.txt
 
 dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ > /home/jchad/backup/keyboard-shortcuts.txt
 # restore: dconf load /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ < /home/jchad/backup/keyboard-shortcuts.txt
 
 cp /home/jchad/.bashrc /home/jchad/backup/bashrc.txt
+
+gnome-extensions list > /home/jchad/backup/gnome-extensions.txt
