@@ -16,4 +16,6 @@ dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ > /
 
 cp /home/jchad/.bashrc /home/jchad/backup/bashrc.txt
 
+cp /etc/tlp.conf /home/jchad/backup/tlp.txt
+
 gnome-extensions list > /home/jchad/backup/gnome-extensions.txt
