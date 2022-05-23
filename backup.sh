@@ -8,6 +8,7 @@ comm -23 <(apt-mark showmanual | sort -u) <(gzip -dc /var/log/installer/initial-
 crontab -l > /home/jchad/backup/crontab.txt
 
 conda env export -n base --from-history > /home/jchad/backup/conda.txt
+conda env export -n stocks --from-history >> /home/jchad/backup/conda.txt
 
 dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ > /home/jchad/backup/keyboard-shortcuts.txt
 # restore: dconf load /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ < /home/jchad/backup/keyboard-shortcuts.txt
