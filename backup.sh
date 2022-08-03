@@ -13,7 +13,7 @@ conda env export -n stocks --from-history >> /home/jchad/backup/conda.txt
 dconf dump /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ > /home/jchad/backup/keyboard-shortcuts.txt
 # restore: dconf load /org/gnome/settings-daemon/plugins/media-keys/custom-keybindings/ < /home/jchad/backup/keyboard-shortcuts.txt
 
-ls -l /home/jchad/software/ > /home/jchad/backup/software.txt
+ls -l /opt/ > /home/jchad/backup/opt.txt
 ls -l /home/jchad/projects/ > /home/jchad/backup/projects.txt
 
 cp /home/jchad/.bashrc /home/jchad/backup/bashrc.txt
